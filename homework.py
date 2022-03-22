@@ -1,6 +1,3 @@
-from typing import Dict
-
-
 class InfoMessage:
     """Информационное сообщение о тренировке."""
 
@@ -136,9 +133,9 @@ class Swimming(Training):
                 / self.M_IN_KM / self.duration)
 
 
-def read_package(workout_type: str, data: list[int]) -> Training:
+def read_package(workout_type: str, data: int) -> Training:
     """Прочитать данные полученные от датчиков."""
-    class_data: Dict = {
+    class_data = {
         'SWM': Swimming,
         'RUN': Running,
         'WLK': SportsWalking
