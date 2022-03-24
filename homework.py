@@ -150,7 +150,6 @@ def main(training: Training) -> str:
 
 
 if __name__ == '__main__':
-    """Принять исходные данные от датчиков."""
     packages: Dict[str, List[int]] = [
         ('SWM', [720, 1, 80, 25, 40]),
         ('RUN', [15000, 1, 75]),
