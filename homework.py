@@ -128,7 +128,7 @@ class Swimming(Training):
                 * self.COEF_SWIM_2 * self.weight)
 
     def get_mean_speed(self) -> float:
-        """Расчет средней скорости при плавании"""
+        """Расчет средней скорости при плавании."""
         return (self.length_pool * self.count_pool
                 / self.M_IN_KM / self.duration)
 
