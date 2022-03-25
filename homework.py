@@ -157,6 +157,5 @@ if __name__ == '__main__':
     ]
 
     for workout_type, data in packages:
-        """Распкаовка принятых данных от датчиков."""
         training = read_package(workout_type, data)
         main(training)
